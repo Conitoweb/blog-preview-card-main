@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+      background-color:  hsl(47, 88%, 63%);
+     
+    }
+    .container{
+      width: 100%;
+      height: 1000px;
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+    }.box{
+      background-color: hsl(0, 0%, 100%);
+      width: 400px;
+      height: 500px;
+      border-radius: 10px;
+      border: 1px solid hsl(0, 0%, 7%);
+      box-shadow: 8px 8px 2px black;
+     
+    }
+    .card{
+      /* border: 1px solid red; */
+      width: 90%;
+      height: 460px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .card .img{
+      border-radius: 10px;
+      width:100%;
+    }.card-title{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }.learning{
+      background: hsl(47, 88%, 63%);
+      color:hsl(0, 0%, 7%) ;
+      width: 78px;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: 'monospace';
+      font-weight: 600;
+      font-size: 1em;
+    }.published{
+      font-size: 1em;
+    }.title{
+      color:hsl(0, 0%, 7%) ;
+      font-weight: 800;
+     margin-top: 10px;
+    }.lorem{
+      margin-top: 10px;
+      color:hsl(0, 0%, 50%);
+      font-size: 1em;
+    }.box-avatar{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .avatar{
+      width: 35px;
+      height: 35px;
+    } .greg{
+      font-weight: 800;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+  <div class="box">
+    <div class="card">
+
+      <div class="card-img">
+        
+        <img class="img" src="../blog-preview-card-main/assets/images/illustration-article.svg" alt="">
+        
+      </div>
+      <div class="card-title">
+        <p class="learning">learning</p> 
+        <p class="published">published 21 Dec 2023</p>
+        <h3 class="title">HTML & CSS Foundations</h3>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam sit unde veniam!</p>
+        <div class="box-avatar">
+
+          <img class="avatar" src="../blog-preview-card-main/assets/images/image-avatar.webp" alt=""> 
+          <h4 class="greg">Greg Hooper</h4>
+        </div>
+      </div>
+      </div>
+    </div>
+
+ </div>
+
+</body>
+</html>
